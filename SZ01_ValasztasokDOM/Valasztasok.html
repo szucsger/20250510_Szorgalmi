@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Választások</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="Valasztasok.css">
+</head>
+<div class="container text-center mt-5">
+    <div class="m-3">
+        <label for="kepviselokSzamaLekerdez">Az induló képviselők száma</label>
+        <input type="button" id="kepviselokSzamaLekerdez" value="Lekérdezés" class="btn btn-dark">
+        <div id="kepviselokSzama"></div>
+    </div>
+    <div class="m-3">
+        <select name="" id="partok" class="btn btn-dark">
+            <option value="">Válasszon</option>
+            <option value="Független">Független</option>
+            <option value="GYEP">GYEP</option>
+            <option value="ZEP">ZEP</option>
+            <option value="HEP">HEP</option>
+            <option value="TISZ">TISZ</option>
+        </select>
+        <input type="button" id="partokGomb" value="Lekérdezés" class="btn btn-dark">
+        <div id="partokEredmeny"></div>
+    </div>
+    <div class="m-3">
+        <label for="kepviseloNev">A képviselő neve</label>
+        <input type="text" name="kepviseloNev" id="kepviseloNev" class="btn btn-dark">
+        <input type="button" id="kepviseloLekerdez" value="Lekérdezés" class="btn btn-dark"></input>
+        <div id="kepviseloNevEredmeny"></div>
+    </div>
+    <div id="szavazatokAranya" class="m-3">
+        <label for="szavazatokAranyaLekerdez">A szavazatok aránya</label>
+        <input type="button" value="Lekérdezés" id="szavazatokAranyaLekerdez" class="btn btn-dark">
+        <div id="szavazatokAranyaEredmeny"></div>
+    </div>
+    <div>
+        <label for="szavazatokTablazatLekerdez">Szavazatok mennyisége pártokra osztva </label>
+        <input type="button" value="Lekérdezés" id="szavazatokTablazatLekerdez" class="btn btn-dark">
+        <div id="szavazatokMennyisegeTablazat"></div>
+    </div>
+    <div class="m-3">
+
+        <label for="legtobbSzavazatLekerdez">Legtöbb szavazatott szerzett képviselő</label>
+        <input type="button" id="legtobbSzavazatLekerdez" value="Lekérdezés" class="btn btn-dark">
+        <div id="legtobbSzavazatEredmeny"></div>
+    </div>
+</div>
+
+<body>
+    <script src="szavazatok.js"></script>
+</body>
+
+</html>
